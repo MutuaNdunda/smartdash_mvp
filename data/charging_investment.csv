@@ -1,0 +1,4 @@
+Charger_Type,CapEx_RWF,Installation_Cost_RWF,OM_Cost_RWF_per_year,Average_Utilization_pct
+AC,5000000,1000000,200000,30
+DC_Fast,30000000,7000000,800000,50
+Swap,15000000,3000000,500000,70

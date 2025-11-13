@@ -1,0 +1,31 @@
+User_ID,User_Type,Usability_Rating,Clarity_Rating,Comments
+1,Engineer,5,4,Dashboard is clear
+2,Investor,5,4,Make filters simpler
+3,Engineer,5,4,Need more policy insights
+4,Policy,3,3,Add more maps
+5,Investor,5,4,Improve charging cost calculator
+6,Engineer,5,4,Improve charging cost calculator
+7,Investor,5,5,Make filters simpler
+8,Policy,4,5,Add more maps
+9,Engineer,5,4,Add more maps
+10,Policy,5,5,Dashboard is clear
+11,Policy,4,5,Improve charging cost calculator
+12,Policy,3,4,Improve charging cost calculator
+13,Investor,3,4,Need more policy insights
+14,Policy,4,5,Add more maps
+15,Engineer,3,5,Improve charging cost calculator
+16,Investor,3,3,Dashboard is clear
+17,Investor,3,5,Add more maps
+18,Engineer,3,4,Make filters simpler
+19,Investor,3,5,Make filters simpler
+20,Engineer,4,3,Need more policy insights
+21,Policy,4,5,Add more maps
+22,Investor,3,5,Make filters simpler
+23,Engineer,5,4,Make filters simpler
+24,Engineer,5,3,Make filters simpler
+25,Investor,3,3,Improve charging cost calculator
+26,Investor,5,3,Add more maps
+27,Investor,3,5,Make filters simpler
+28,Investor,3,3,Need more policy insights
+29,Engineer,5,3,Add more maps
+30,Policy,4,5,Improve charging cost calculator

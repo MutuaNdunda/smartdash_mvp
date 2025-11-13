@@ -1,0 +1,5 @@
+Tariff_Type,Price_RWF_per_kWh,Peak_Hours,Offpeak_Hours
+Residential,280,18:00-22:00,00:00-05:00
+Commercial,230,18:00-22:00,00:00-05:00
+Industrial,180,18:00-22:00,00:00-05:00
+EV_Tariff,150,18:00-22:00,00:00-05:00
