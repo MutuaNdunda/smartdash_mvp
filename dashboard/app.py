@@ -103,6 +103,9 @@ with tab1:
     - Charging infrastructure is concentrated in Kigali.  
     - Evening charging significantly increases grid load.  
     """)
+    st.subheader("Demo Video")
+    st.video("https://youtu.be/TdP2X5-MQ08")
+
 
 # ===================================================
 # TAB 2: EV ADOPTION
