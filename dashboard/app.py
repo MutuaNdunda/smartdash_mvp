@@ -16,10 +16,14 @@ DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 # ---------------------------------------------------
 # LOAD DATASETS
 # ---------------------------------------------------
+BASE_URL = "https://raw.githubusercontent.com/MutuaNdunda/smartdash_mvp/refs/heads/main/data"
+
 @st.cache_data
 def load(name):
-    return pd.read_csv(os.path.join(DATA_DIR, name))
+    url = f"{BASE_URL}/{name}"
+    return pd.read_csv(url)
 
+# Load all datasets from GitHub raw URLs
 ev = load("ev_adoption.csv")
 stations = load("charging_stations.csv")
 tariffs = load("tariffs.csv")
