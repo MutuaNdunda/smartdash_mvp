@@ -176,23 +176,59 @@ districts.to_csv(os.path.join(OUT_DIR, "districts.csv"), index=False)
 # --------------------------------------------------
 # 11. User Feedback Dataset
 # --------------------------------------------------
-n_feedback = 30
+# --------------------------------------------------
+# 11. User Feedback Dataset
+# --------------------------------------------------
+n_feedback = 200
 
 user_feedback = pd.DataFrame({
     "User_ID": range(1, n_feedback + 1),
     "User_Type": np.random.choice(["Policy", "Investor", "Engineer"], n_feedback),
-    "Usability_Rating": np.random.randint(3, 6, n_feedback),
-    "Clarity_Rating": np.random.randint(3, 6, n_feedback),
+    "Usability_Rating": np.random.randint(1, 6, n_feedback),
+    "Clarity_Rating": np.random.randint(1, 6, n_feedback),
     "Comments": np.random.choice([
-        "Dashboard is clear",
-        "Add more maps",
-        "Need more policy insights",
-        "Improve charging cost calculator",
-        "Make filters simpler"
+        # Policy User Comments
+        "The policy impact visualization lacks granular district-level data needed for targeted interventions and equitable resource allocation",
+        "Missing integration with national development goals makes it difficult to align EV infrastructure planning with broader economic strategies",
+        "The subsidy modeling tool doesn't account for varying income levels across regions, limiting its effectiveness for social equity analysis",
+        "Environmental impact metrics are oversimplified and don't include lifecycle emissions or battery production environmental costs",
+        "Public health co-benefits from reduced air pollution are not quantified, making cost-benefit analysis incomplete for policy justification",
+        
+        # Investor User Comments
+        "ROI calculations lack sensitivity analysis for key variables like electricity price fluctuations and changing adoption rates",
+        "The investment risk assessment doesn't incorporate regulatory changes or potential policy shifts over the 5-10 year horizon",
+        "Missing comparative analysis between different charger types makes capital allocation decisions difficult without external tools",
+        "The demand forecasting model doesn't differentiate between urban, peri-urban, and rural adoption patterns across Rwanda",
+        "Operating cost projections are static and don't account for maintenance escalation or technological obsolescence risks",
+        
+        # Engineer User Comments
+        "Grid impact simulations need more granular time-step analysis (15-minute intervals instead of hourly) for proper infrastructure planning",
+        "The API documentation is incomplete and lacks examples for integrating real-time charging station status with third-party applications",
+        "Battery degradation models are oversimplified and don't account for different chemistry types or charging patterns impact on lifespan",
+        "The load forecasting algorithm doesn't consider seasonal variations or special events that significantly impact electricity demand",
+        "Missing interoperability standards between different charger manufacturers creates integration challenges at the network level",
+        
+        # General Usability Comments
+        "The filter system becomes unresponsive when applying multiple criteria to large datasets, requiring page refresh to restore functionality",
+        "Export functionality is limited to CSV format; we need PDF reports with customizable layouts for executive presentations",
+        "Real-time data updates are inconsistent across dashboard components, causing confusion when different panels show conflicting numbers",
+        "The mobile interface lacks critical functionality available on desktop, particularly for map-based data exploration and filtering",
+        "User permission system is too basic - we need role-based access control with customizable data visibility for different team members",
+        
+        # Data Quality Comments
+        "Charging station utilization data shows implausible patterns suggesting either reporting errors or data processing issues",
+        "The vehicle range data appears outdated and doesn't reflect improvements in newer EV models entering the Rwandan market",
+        "Energy consumption metrics don't correlate with actual billing data from utility providers, indicating calibration problems",
+        "Historical data has significant gaps during 2020-2021 period, limiting trend analysis and long-term performance assessment",
+        "Geospatial coordinates for some charging stations are inaccurate, placing them in residential buildings instead of actual locations",
+        
+        # Feature Requests
+        "Need predictive analytics for optimal charger placement based on traffic patterns, population density, and existing infrastructure",
+        "Integration with renewable energy generation data would help optimize charging schedules for maximum clean energy utilization",
+        "Customizable alert system for abnormal charging patterns, equipment failures, or significant deviations from forecasted demand",
+        "Benchmarking tools to compare performance metrics against international standards and similar markets in the region",
+        "Scenario planning module to model different adoption curves, policy interventions, and technology disruption scenarios"
     ], n_feedback)
 })
 
 user_feedback.to_csv(os.path.join(OUT_DIR, "user_feedback.csv"), index=False)
-
-
-print("✅ All simulated datasets successfully generated!")
