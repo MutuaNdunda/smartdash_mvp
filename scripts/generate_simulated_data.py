@@ -176,9 +176,6 @@ districts.to_csv(os.path.join(OUT_DIR, "districts.csv"), index=False)
 # --------------------------------------------------
 # 11. User Feedback Dataset
 # --------------------------------------------------
-# --------------------------------------------------
-# 11. User Feedback Dataset
-# --------------------------------------------------
 n_feedback = 30
 
 user_feedback = pd.DataFrame({
