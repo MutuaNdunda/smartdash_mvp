@@ -7,7 +7,7 @@ import os
 # PAGE CONFIG
 # ---------------------------------------------------
 st.set_page_config(
-    page_title="SmartDash MVP – Kigali EV Dashboard",
+    page_title="SmartDash MVP – Kigali EV Dashboard - Inspired Mary wa Strathmore",
     layout="wide"
 )
 
